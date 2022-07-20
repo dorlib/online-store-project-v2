@@ -1,4 +1,4 @@
-export class soccerPlayer{
+export class groceryItem{
     itemId: number;
     name: string;
     description: string;
