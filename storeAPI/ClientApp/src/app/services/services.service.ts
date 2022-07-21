@@ -2,7 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { item } from '../../../models/item.model'
+import { groceryItem } from '../models/item.model';
 @Injectable({
   providedIn: 'root'
 })
@@ -12,24 +12,24 @@ export class ServicesService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getAllPlayers(): Observable<any> {
-    return this.httpClient.get<any[]>(this.path + "/Players/GetPlayers");
+  getAllItems(): Observable<any> {
+    return this.httpClient.get<any[]>(this.path + "/Items/GetItems");
   }
 
-  editPlayer(item: item): any {
+  editItem(item: groceryItem): any {
     const header = new HttpHeaders().set('Content-type', 'application/json');
 
-    return this.httpClient.put(this.path + "/Players/Put", JSON.stringify(player), { headers: header })
+    return this.httpClient.put(this.path + "/Items/Put", JSON.stringify(item), { headers: header })
   }
 
-  createNewPlayer(player : soccerPlayer): any {
+  createNewItem(item : groceryItem): any {
     const header = new HttpHeaders().set('Content-type', 'application/json');
 
-    return this.httpClient.post(this.path + "/Players/Post", JSON.stringify(player), { headers: header })
+    return this.httpClient.post(this.path + "/Items/Post", JSON.stringify(item), { headers: header })
   }
 
-  deletePlayer(player: soccerPlayer): any {
-    return this.httpClient.delete(this.path + "/Players/Delete/" + player.playerId)
+  deleteItem(item: groceryItem): any {
+    return this.httpClient.delete(this.path + "/Items/Delete/" + item.itemId)
   }
 
 

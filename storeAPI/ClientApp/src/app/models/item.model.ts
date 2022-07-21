@@ -7,7 +7,7 @@ export class groceryItem{
 
     // need to add users
   
-    constructor(itemId: number, name: string, description: string, price: number, stock:number,) {
+    constructor(itemId: number, name: string, description: string, price: number, stock: number,) {
       this.itemId = itemId;
       this.name = name;
       this.description = description;
