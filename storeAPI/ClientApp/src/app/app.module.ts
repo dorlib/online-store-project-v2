@@ -25,7 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ItemListComponent, pathMatch: 'full' },
+      { path: '', component: ItemListComponent, pathMatch: 'full' }
     ]),
   ],
   providers: [],
