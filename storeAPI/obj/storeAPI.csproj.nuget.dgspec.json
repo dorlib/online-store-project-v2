@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dorli\\Desktop\\CSharp\\store-project\\storeAPI\\storeAPI\\storeAPI.csproj": {}
+    "C:\\Users\\dorli\\Desktop\\store-project\\storeAPI\\storeAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dorli\\Desktop\\CSharp\\store-project\\storeAPI\\storeAPI\\storeAPI.csproj": {
+    "C:\\Users\\dorli\\Desktop\\store-project\\storeAPI\\storeAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dorli\\Desktop\\CSharp\\store-project\\storeAPI\\storeAPI\\storeAPI.csproj",
+        "projectUniqueName": "C:\\Users\\dorli\\Desktop\\store-project\\storeAPI\\storeAPI.csproj",
         "projectName": "storeAPI",
-        "projectPath": "C:\\Users\\dorli\\Desktop\\CSharp\\store-project\\storeAPI\\storeAPI\\storeAPI.csproj",
+        "projectPath": "C:\\Users\\dorli\\Desktop\\store-project\\storeAPI\\storeAPI.csproj",
         "packagesPath": "C:\\Users\\dorli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dorli\\Desktop\\CSharp\\store-project\\storeAPI\\storeAPI\\obj\\",
+        "outputPath": "C:\\Users\\dorli\\Desktop\\store-project\\storeAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dorli\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,30 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
