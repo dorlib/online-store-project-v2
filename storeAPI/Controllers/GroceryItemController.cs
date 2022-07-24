@@ -17,7 +17,7 @@ namespace storeAPI.Controllers
         }
 
         [HttpGet("GetGroceryItems")]
-        public async Task<IActionResult> GetPlayers()
+        public async Task<IActionResult> GetGroceryItems()
         {
             var itmes = await _groceryItemRepository.GetGroceryItems();
             return Ok(itmes);

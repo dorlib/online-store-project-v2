@@ -14,24 +14,23 @@ export class ServicesService {
   constructor(private httpClient: HttpClient) { }
 
   getAllItems(): Observable<any> {
-    return this.httpClient.get<any[]>(this.path + "/Items/GetItems");
+    return this.httpClient.get<any[]>(this.path + "/GroceryItem/GetGroceryItems");
   }
 
   editItem(item: groceryItem): any {
     const header = new HttpHeaders().set('Content-type', 'application/json');
 
-    return this.httpClient.put(this.path + "/Items/Put", JSON.stringify(item), { headers: header })
+    return this.httpClient.put(this.path + "/GroceryItem/Put", JSON.stringify(item), { headers: header })
   }
 
   createNewItem(item : groceryItem): any {
     const header = new HttpHeaders().set('Content-type', 'application/json');
 
-    return this.httpClient.post(this.path + "/Items/Post", JSON.stringify(item), { headers: header })
+    return this.httpClient.post(this.path + "/GroceryItem/Post", JSON.stringify(item), { headers: header })
   }
 
   deleteItem(item: groceryItem): any {
-    return this.httpClient.delete(this.path + "/Items/Delete/" + item.itemId)
+    return this.httpClient.delete(this.path + "/GroceryItem/Delete/" + item.itemId)
   }
-
 
 }

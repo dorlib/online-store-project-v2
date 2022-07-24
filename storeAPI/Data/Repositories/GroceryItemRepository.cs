@@ -21,9 +21,13 @@ namespace storeAPI.Data.Repositories
         public async Task<bool> DeleteGroceryItem(int groceryItemId)
         {
             var item = await _databaseContext.GroceryItems.Where(x => x.ItemId == groceryItemId).FirstOrDefaultAsync();
-            _databaseContext.GroceryItems.Remove(item);
-            await _databaseContext.SaveChangesAsync();
-            return true;
+            if (item != null)
+            {
+                _databaseContext.GroceryItems.Remove(item);
+                await _databaseContext.SaveChangesAsync();
+                return true;
+            }
+            return false;
         }
 
         public async Task<int> EditGroceryItem(GroceryItem groceryItem)
