@@ -11,5 +11,6 @@ namespace storeAPI.Model
         public double Price { get; set; }
         public int? Stock { get; set; }
         public string? Unit { get; set; }
+        public string? Department { get; set; }
     }
 }
