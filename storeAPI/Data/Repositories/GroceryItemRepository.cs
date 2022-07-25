@@ -38,6 +38,7 @@ namespace storeAPI.Data.Repositories
             itemToEdit.Price = groceryItem.Price;
             itemToEdit.Stock = groceryItem.Stock;
             itemToEdit.Unit = groceryItem.Unit;
+            itemToEdit.Department = groceryItem.Department;
 
             await _databaseContext.SaveChangesAsync();
             return groceryItem.ItemId;

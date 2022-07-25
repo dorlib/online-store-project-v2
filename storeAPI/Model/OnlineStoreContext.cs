@@ -54,6 +54,10 @@ namespace storeAPI.Model
                     .HasMaxLength(30)
                     .IsUnicode(false)
                     .HasColumnName("unit");
+
+                entity.Property(e => e.Department)
+                    .HasMaxLength(50)
+                    .HasColumnName("department");
             });
 
             OnModelCreatingPartial(modelBuilder);
