@@ -5,19 +5,21 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
+const material = [
+  MatTableModule,
+  MatDialogModule,
+  MatIconModule,
+  MatSnackBarModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatToolbarModule,
+]
 
 @NgModule({
   declarations: [],
-  imports: [
-  ],
-  exports: [
-    MatTableModule,
-    MatDialogModule,
-    MatIconModule,
-    MatSnackBarModule,
-    MatFormFieldModule,
-    MatInputModule
-  ]
+  imports: [],
+  exports: [material]
 })
 export class MaterialModule { }

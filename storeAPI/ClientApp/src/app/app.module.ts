@@ -1,3 +1,4 @@
+import { MainComponent } from './main/main.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatSelectModule} from '@angular/material/select';
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     ItemListComponent,
     ItemForm,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
